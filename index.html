@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Agrinho: Agro Forte e Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Missão Agrinho</h1>
+            <p class="subtitle">Agro Forte e Futuro Sustentável</p>
+        </header>
 
+        <div id="start-screen" class="screen">
+            <h2>Ajude o Agrinho a cuidar da fazenda do futuro!</h2>
+            <p>Responda às perguntas corretamente para adotar práticas sustentáveis e ver a plantação prosperar.</p>
+            <button id="start-btn">Iniciar Missão</button>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div class="status-bar">
+                <span id="question-counter">Pergunta 1 de 5</span>
+                <span id="score">Pontos: 0</span>
+            </div>
+
+            <div class="farm-display">
+                <div id="farm-stage" class="stage-1">🌱</div>
+                <p id="farm-status">A fazenda precisa de boas práticas!</p>
+            </div>
+
+            <div class="quiz-container">
+                <p id="question-text">Texto da pergunta aqui?</p>
+                <div id="options-container" class="options-grid">
+                    </div>
+            </div>
+            
+            <div id="feedback" class="feedback hidden"></div>
+            <button id="next-btn" class="hidden">Próxima Pergunta</button>
+        </div>
+
+        <div id="end-screen" class="screen hidden">
+            <h2>Missão Cumprida!</h2>
+            <p id="final-message">Você ajudou a construir um futuro mais verde!</p>
+            <div class="final-score">Pontuação Final: <span id="final-points">0</span>/50</div>
+            <button id="restart-btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
